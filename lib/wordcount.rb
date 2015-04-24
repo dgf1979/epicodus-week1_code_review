@@ -1,8 +1,8 @@
 class String
   #method to count the # of times this string exists in the parameter string
   define_method(:exists_number_of_times_in) do |sentance_to_search|
-    word_to_locate = self
-    words_to_compare = sentance_to_search.split(" ")
+    word_to_locate = self.downcase()
+    words_to_compare = sentance_to_search.downcase().split(" ")
     matches = 0
 
     #loop array of words to compare and increment matches on positive hits
