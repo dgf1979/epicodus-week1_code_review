@@ -1,17 +1,17 @@
 # epicodus-week1_code_review
 First Weeks' Code Review project for Epicodus
 
-# Author: Drew Finstrom
+## Author: Drew Finstrom
 
-# Heroku link:
+## Heroku link:
 
 
 
-# Setup Instructions
+## Setup Instructions
 
 bundle and run "ruby app.rb" from the project root, or deploy to Heroku
 
-# Copyright and license information:
+## Copyright and license information:
 
 This is free and unencumbered software released into the public domain.
 
