@@ -1,0 +1,17 @@
+a {
+  font-style: italic;
+}
+
+div#search_result {
+    font-size: 2em;
+}
+
+div#search_result h1 {
+  font-weight: bold;
+}
+
+div.center {
+  margin: auto;
+  padding: 20px;
+  text-align:center;
+}

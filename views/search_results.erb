@@ -1,6 +1,10 @@
-<div id="search_result">
+<div id="search_result" class="center">
+  <h1>Your Results:</h1>
   <%=
   "In the phrase '#{@sentance_to_search}', the word '#{@word_to_search_for}'" +
   " appears #{@word_count} times!"
   %>
+</div>
+<div class="center">
+  <a href="/">Great! Now let's try another..</a>
 </div>
