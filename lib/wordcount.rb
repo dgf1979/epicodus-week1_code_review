@@ -7,7 +7,7 @@ class String
 
     #loop array of words to compare and increment matches on positive hits
     words_to_compare.each do |word_to_compare|
-      if word_to_locate == word_to_compare
+      if word_to_compare.include?(word_to_locate)
         matches += 1
       end
     end
