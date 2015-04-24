@@ -8,3 +8,16 @@ get('/test') do
   @test_var = "Sinatra OK"
   erb(:test)
 end
+
+#default route and form page
+get('/') do
+  @erb(:search_form)
+end
+
+#search results route
+get('/results') do
+  @word_to_search_for = params.fetch('')
+  @sentance_to_search = params.fetch('')
+  @word_count = @word_to_search_for.exists_number_of_times_in(@sentance_to_search)
+  erb(:search_results)
+end
