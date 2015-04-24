@@ -1,5 +1,6 @@
-<%= @word_count %>
-<br />
-<%= @sentance_to_search %>
-<br />
-<%= @word_to_search_for %>
+<div id="search_result">
+  <%=
+  "In the phrase '#{@sentance_to_search}', the word '#{@word_to_search_for}'" +
+  " appears #{@word_count} times!"
+  %>
+</div>
