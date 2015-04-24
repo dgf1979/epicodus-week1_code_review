@@ -13,8 +13,13 @@ describe('#String.exists_number_of_times_in()') do
   end
 
   #multi-word test with punctuation characters (e.g. commas)
-  it("returns the expect count when passed a string where matching words may have punctuation") do
-    expect(("a_string").exists_number_of_times_in("a_string, a_string, - my kingdom for a_string")).to(eq(3))
+  it("returns the expected count when passed a parameter string where matching words may have punctuation") do
+    expect(("a_string").exists_number_of_times_in("a_string, a_string, - my kingdom for a_string!")).to(eq(3))
+  end
+
+  #multi-word test with case insensitivity
+  it("returns the expected count when passed a parameter string where matching words include mixed case") do
+    expect(("a_string").exists_number_of_times_in("A_string, a_string, - my kingdom for A_STRING!")).to(eq(3))
   end
 
 end
